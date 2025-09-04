@@ -79,3 +79,8 @@ line-height: 19px;
 color: #E23DD7;
 `
 
+export const ErrorText = styled.p`
+color: #FF0000;
+font-size: 12px;
+`
+
