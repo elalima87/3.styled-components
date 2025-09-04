@@ -1,4 +1,4 @@
-import { MdEmail, MdLock } from "react-icons/md";
+import { MdEmail, MdLock, MdPerson   } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -52,7 +52,7 @@ const Cadastro = () => {
                     <TitleCadastro>Comece agora grátis</TitleCadastro>
                     <SubTitleCadastro>Crie sua conta e make the change._</SubTitleCadastro>
                     <form >
-                        <Input name="nome" control={control} errorMessage={errors?.email?.message} placeholder="Nome completo"  type="text" leftIcon={<MdEmail />} />
+                        <Input name="nome" control={control} errorMessage={errors?.email?.message} placeholder="Nome completo"  type="text" leftIcon={<MdPerson   />} />
                         <Input name="email" control={control} errorMessage={errors?.email?.message} placeholder="E-mail"  type="email" leftIcon={<MdEmail />} />
                         <Input name="password" control={control} errorMessage={errors?.password?.message} placeholder="Senha"  type="password" leftIcon={<MdLock />} />
 
